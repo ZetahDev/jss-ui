@@ -30,7 +30,25 @@ export {
   CardTitle
 } from "./components/card";
 export { Checkbox, type CheckboxProps } from "./components/checkbox";
+export {
+  Chart,
+  ChartTooltip,
+  ChartTooltipContent,
+  type ChartProps,
+  type ChartSeries
+} from "./components/chart";
 export { Collapsible, CollapsibleContent, CollapsibleTrigger, type CollapsibleContentProps } from "./components/collapsible";
+export { Combobox, type ComboboxOption, type ComboboxProps } from "./components/combobox";
+export {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  type CommandProps
+} from "./components/command";
 export {
   ContextMenu,
   ContextMenuCheckboxItem,
@@ -60,6 +78,9 @@ export {
   DialogTitle,
   DialogTrigger
 } from "./components/dialog";
+export { Calendar, type CalendarProps } from "./components/calendar";
+export { DatePicker, type DatePickerProps } from "./components/date-picker";
+export { DataTable, type DataTableProps } from "./components/data-table";
 export {
   Drawer,
   DrawerClose,
@@ -86,10 +107,19 @@ export {
   DropdownMenuSub,
   DropdownMenuTrigger
 } from "./components/dropdown-menu";
+export {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselProps
+} from "./components/carousel";
 export { Empty, EmptyActions, EmptyDescription, EmptyTitle } from "./components/empty";
 export { Field, FieldDescription, FieldError, FieldLabel } from "./components/field";
 export { HoverCard, HoverCardContent, HoverCardTrigger, type HoverCardContentProps } from "./components/hover-card";
 export { Input, type InputProps } from "./components/input";
+export { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from "./components/input-otp";
 export { InputGroup, InputGroupAddon, InputGroupInput } from "./components/input-group";
 export { Item } from "./components/item";
 export { Kbd } from "./components/kbd";
@@ -135,6 +165,7 @@ export {
 export { Popover, PopoverAnchor, PopoverContent, PopoverTrigger, type PopoverContentProps } from "./components/popover";
 export { Progress, type ProgressProps } from "./components/progress";
 export { RadioGroup, RadioGroupItem, type RadioGroupItemProps, type RadioGroupProps } from "./components/radio-group";
+export { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "./components/resizable";
 export { ScrollArea, ScrollAreaCorner, ScrollAreaScrollbar, ScrollAreaViewport } from "./components/scroll-area";
 export { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "./components/select";
 export { Separator, type SeparatorProps } from "./components/separator";
@@ -152,6 +183,16 @@ export {
 } from "./components/sheet";
 export { Skeleton, type SkeletonProps } from "./components/skeleton";
 export { Spinner, type SpinnerProps } from "./components/spinner";
+export {
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarHeader,
+  SidebarItem,
+  SidebarTrigger,
+  type SidebarProps
+} from "./components/sidebar";
 export { Toaster, toast } from "./components/sonner";
 export { Switch, type SwitchProps } from "./components/switch";
 export { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "./components/table";
