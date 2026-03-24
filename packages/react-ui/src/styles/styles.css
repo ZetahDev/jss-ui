@@ -22,7 +22,7 @@
 }
 
 .jss-button:focus-visible {
-  outline: 2px solid var(--jss-color-bg-primary);
+  outline: 2px solid var(--jss-color-background-primary);
   outline-offset: 2px;
 }
 
@@ -36,23 +36,23 @@
 }
 
 .jss-button--solid {
-  background-color: var(--jss-button-bg-default);
-  color: var(--jss-button-text-default);
+  background-color: var(--jss-component-button-background-default);
+  color: var(--jss-component-button-text-default);
 }
 
 .jss-button--solid:hover:not(:disabled) {
-  background-color: var(--jss-button-bg-hover);
+  background-color: var(--jss-component-button-background-hover);
 }
 
 .jss-button--outline {
-  background-color: var(--jss-color-bg-surface);
+  background-color: var(--jss-color-background-surface);
   border-color: var(--jss-color-border-muted);
   color: var(--jss-color-text-primary);
 }
 
 .jss-button--outline:hover:not(:disabled) {
-  border-color: var(--jss-color-bg-primary);
-  color: var(--jss-color-bg-primary);
+  border-color: var(--jss-color-background-primary);
+  color: var(--jss-color-background-primary);
 }
 
 .jss-button--ghost {
@@ -96,7 +96,7 @@
 }
 
 .jss-badge--default {
-  background-color: var(--jss-color-bg-primary);
+  background-color: var(--jss-color-background-primary);
   color: var(--jss-color-text-inverted);
 }
 
@@ -112,12 +112,12 @@
 }
 
 .jss-badge--destructive {
-  background-color: var(--jss-color-danger);
+  background-color: var(--jss-color-text-danger);
   color: var(--jss-color-text-inverted);
 }
 
 .jss-card {
-  background-color: var(--jss-color-bg-surface);
+  background-color: var(--jss-color-background-surface);
   border: 1px solid var(--jss-color-border-muted);
   border-radius: 0.75rem;
   box-shadow: 0 2px 8px rgba(17, 24, 39, 0.06);
@@ -160,7 +160,7 @@
 .jss-input,
 .jss-textarea,
 .jss-select__trigger {
-  background-color: var(--jss-color-bg-surface);
+  background-color: var(--jss-color-background-surface);
   border: 1px solid var(--jss-color-border-muted);
   border-radius: 0.5rem;
   color: var(--jss-color-text-primary);
@@ -186,8 +186,8 @@
 .jss-input:focus-visible,
 .jss-textarea:focus-visible,
 .jss-select__trigger:focus-visible {
-  border-color: var(--jss-color-bg-primary);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--jss-color-bg-primary) 20%, transparent);
+  border-color: var(--jss-color-background-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--jss-color-background-primary) 20%, transparent);
 }
 
 .jss-separator {
@@ -230,7 +230,7 @@
   animation: jss-spin 0.9s linear infinite;
   border: 2px solid color-mix(in srgb, var(--jss-color-border-muted) 85%, white);
   border-radius: 999px;
-  border-top-color: var(--jss-color-bg-primary);
+  border-top-color: var(--jss-color-background-primary);
   display: inline-block;
 }
 
@@ -264,7 +264,7 @@
 }
 
 .jss-progress__indicator {
-  background-color: var(--jss-color-bg-primary);
+  background-color: var(--jss-color-background-primary);
   height: 100%;
   transition: transform 0.25s ease;
   width: 100%;
@@ -273,7 +273,7 @@
 .jss-checkbox,
 .jss-radio {
   align-items: center;
-  background-color: var(--jss-color-bg-surface);
+  background-color: var(--jss-color-background-surface);
   border: 1px solid var(--jss-color-border-muted);
   color: var(--jss-color-text-inverted);
   display: inline-flex;
@@ -294,15 +294,15 @@
 
 .jss-checkbox[data-state="checked"],
 .jss-radio[data-state="checked"] {
-  background-color: var(--jss-color-bg-primary);
-  border-color: var(--jss-color-bg-primary);
+  background-color: var(--jss-color-background-primary);
+  border-color: var(--jss-color-background-primary);
 }
 
 .jss-checkbox:focus-visible,
 .jss-radio:focus-visible,
 .jss-switch:focus-visible,
 .jss-tabs__trigger:focus-visible {
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--jss-color-bg-primary) 20%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--jss-color-background-primary) 20%, transparent);
   outline: none;
 }
 
@@ -332,8 +332,8 @@
 }
 
 .jss-switch[data-state="checked"] {
-  background-color: var(--jss-color-bg-primary);
-  border-color: var(--jss-color-bg-primary);
+  background-color: var(--jss-color-background-primary);
+  border-color: var(--jss-color-background-primary);
 }
 
 .jss-switch__thumb {
@@ -379,7 +379,7 @@
 }
 
 .jss-tabs__trigger[data-state="active"] {
-  background-color: var(--jss-color-bg-surface);
+  background-color: var(--jss-color-background-surface);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -402,7 +402,7 @@
 }
 
 .jss-select__content {
-  background-color: var(--jss-color-bg-surface);
+  background-color: var(--jss-color-background-surface);
   border: 1px solid var(--jss-color-border-muted);
   border-radius: 0.5rem;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
@@ -428,7 +428,7 @@
 }
 
 .jss-select__item[data-highlighted] {
-  background-color: color-mix(in srgb, var(--jss-color-bg-primary) 14%, white);
+  background-color: color-mix(in srgb, var(--jss-color-background-primary) 14%, white);
   outline: none;
 }
 
