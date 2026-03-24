@@ -30,7 +30,7 @@
         "$TURBO_ROOT$/tsconfig.base.json",
         ".env*"
       ],
-      "outputs": ["coverage/**"]
+      "outputs": []
     },
     "typecheck": {
       "dependsOn": ["^typecheck"],
