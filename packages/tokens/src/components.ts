@@ -1,16 +1,16 @@
 export const buttonTokens = {
   background: {
-    default: "var(--jss-button-bg-default)",
-    hover: "var(--jss-button-bg-hover)"
+    default: "var(--jss-component-button-background-default)",
+    hover: "var(--jss-component-button-background-hover)"
   },
   text: {
-    default: "var(--jss-button-text-default)"
+    default: "var(--jss-component-button-text-default)"
   },
   radius: {
-    default: "var(--jss-button-radius)"
+    default: "var(--jss-component-button-radius-default)"
   },
   padding: {
-    x: "var(--jss-button-padding-x)",
-    y: "var(--jss-button-padding-y)"
+    x: "var(--jss-component-button-padding-x)",
+    y: "var(--jss-component-button-padding-y)"
   }
 } as const;
