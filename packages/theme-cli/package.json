@@ -1,0 +1,36 @@
+{
+  "name": "@js-solutions/theme-cli",
+  "version": "0.0.0",
+  "private": false,
+  "description": "CLI wizard to generate theme artifacts for web, iOS, and Android.",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "jss-theme": "./dist/bin.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup --config tsup.config.ts",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/theme-cli')\"",
+    "test": "vitest run --config vitest.config.ts",
+    "test:watch": "vitest --config vitest.config.ts"
+  }
+}
