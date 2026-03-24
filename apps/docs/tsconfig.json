@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@js-solutions/icons": ["../../packages/icons/src/index.ts"],
+      "@js-solutions/react-ui": ["../../packages/react-ui/src/index.ts"],
+      "@js-solutions/react-ui/styles.css": ["../../packages/react-ui/src/styles/styles.css"],
+      "@js-solutions/tokens": ["../../packages/tokens/src/index.ts"],
+      "@js-solutions/tokens/css": ["../../packages/tokens/tokens.css"]
+    },
+    "types": ["node"]
+  },
+  "include": [".storybook/**/*.ts", "stories/**/*.ts", "stories/**/*.tsx", "src/**/*.d.ts"]
+}

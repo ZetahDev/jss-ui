@@ -1,0 +1,28 @@
+{
+  "name": "@js-solutions/docs",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Storybook docs app for JS Solutions UI.",
+  "scripts": {
+    "build": "storybook build --config-dir .storybook --output-dir storybook-static",
+    "dev": "storybook dev --config-dir .storybook --port 6006",
+    "storybook": "storybook dev --config-dir .storybook --port 6006",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/docs')\"",
+    "test": "node -e \"console.log('test not configured yet for @js-solutions/docs')\""
+  },
+  "dependencies": {
+    "@js-solutions/react-ui": "workspace:*",
+    "@js-solutions/tokens": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^8.6.14",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "storybook": "^8.6.14",
+    "typescript": "^5.9.3"
+  }
+}
