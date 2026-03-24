@@ -1,18 +1,18 @@
 export const cssVariables = {
   color: {
-    backgroundPrimary: "--jss-color-bg-primary",
-    backgroundSurface: "--jss-color-bg-surface",
+    backgroundPrimary: "--jss-color-background-primary",
+    backgroundSurface: "--jss-color-background-surface",
     textPrimary: "--jss-color-text-primary",
     textInverted: "--jss-color-text-inverted",
     borderMuted: "--jss-color-border-muted",
-    danger: "--jss-color-danger"
+    danger: "--jss-color-text-danger"
   },
   button: {
-    backgroundDefault: "--jss-button-bg-default",
-    backgroundHover: "--jss-button-bg-hover",
-    textDefault: "--jss-button-text-default",
-    radius: "--jss-button-radius",
-    paddingX: "--jss-button-padding-x",
-    paddingY: "--jss-button-padding-y"
+    backgroundDefault: "--jss-component-button-background-default",
+    backgroundHover: "--jss-component-button-background-hover",
+    textDefault: "--jss-component-button-text-default",
+    radius: "--jss-component-button-radius-default",
+    paddingX: "--jss-component-button-padding-x",
+    paddingY: "--jss-component-button-padding-y"
   }
 } as const;
