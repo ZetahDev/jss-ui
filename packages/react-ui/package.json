@@ -1,0 +1,43 @@
+{
+  "name": "@js-solutions/react-ui",
+  "version": "0.0.0",
+  "private": false,
+  "description": "React component library for JS Solutions UI.",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@js-solutions/icons": "workspace:*",
+    "@js-solutions/tokens": "workspace:*",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "peerDependencies": {
+    "react": "^18.3.0 || ^19.0.0",
+    "react-dom": "^18.3.0 || ^19.0.0"
+  },
+  "scripts": {
+    "build": "tsup --config tsup.config.ts && node ./scripts/postbuild.mjs",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/react-ui')\"",
+    "test": "node -e \"console.log('test not configured yet for @js-solutions/react-ui')\""
+  }
+}

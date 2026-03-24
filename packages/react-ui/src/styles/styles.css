@@ -1,0 +1,5 @@
+@import "@js-solutions/tokens/css";
+
+.jss-ui-reset {
+  box-sizing: border-box;
+}
