@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import {
+  Button,
   Progress,
+  Slider,
   Table,
   TableBody,
   TableCell,
@@ -13,8 +15,10 @@ import {
   TabsTrigger,
   Tooltip,
   TooltipContent,
+  Toast,
   TooltipProvider,
-  TooltipTrigger
+  TooltipTrigger,
+  toast
 } from "@js-solutions/react-ui";
 
 const meta = {
@@ -90,5 +94,18 @@ export const DataTable: Story = {
         </TableRow>
       </TableBody>
     </Table>
+  )
+};
+
+export const SliderAndToast: Story = {
+  render: () => (
+    <div style={{ display: "grid", gap: "1rem", width: "26rem" }}>
+      <Slider aria-label="Volume" defaultValue={[35]} max={100} step={1} />
+      <Slider aria-label="Range" defaultValue={[20, 70]} max={100} step={1} />
+      <Button size="sm" onClick={() => toast.success("Saved successfully")}>
+        Show toast
+      </Button>
+      <Toast />
+    </div>
   )
 };

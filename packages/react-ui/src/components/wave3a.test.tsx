@@ -50,6 +50,7 @@ import {
   SheetContent,
   SheetDescription,
   SheetTitle,
+  Slider,
   Toggle,
   ToggleGroup,
   ToggleGroupItem
@@ -131,6 +132,12 @@ describe("react-ui wave 3a components", () => {
     expect(screen.getByLabelText("toggle-bold")).toBeInTheDocument();
     expect(screen.getByText("L")).toBeInTheDocument();
     expect(screen.getByText("Ctrl")).toBeInTheDocument();
+  });
+
+  it("renders slider with aria label", () => {
+    render(<Slider aria-label="Volume" defaultValue={[40]} max={100} />);
+
+    expect(screen.getByRole("slider", { name: "Volume" })).toBeInTheDocument();
   });
 
   it("renders sheet and drawer content in open state", () => {
