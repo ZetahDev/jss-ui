@@ -3,10 +3,15 @@
     "button": {
       "background": {
         "default": { "value": "{color.background.primary}" },
-        "hover": { "value": "{color.blue.600}" }
+        "hover": { "value": "{color.blue.600}" },
+        "active": { "value": "{color.blue.600}" },
+        "ghostHover": { "value": "{color.background.surfaceMuted}" }
       },
       "text": {
         "default": { "value": "{color.text.inverted}" }
+      },
+      "border": {
+        "outline": { "value": "{color.border.default}" }
       },
       "radius": {
         "default": { "value": "0.5rem" }
