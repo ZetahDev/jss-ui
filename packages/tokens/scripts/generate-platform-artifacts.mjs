@@ -4,6 +4,8 @@ import { resolve } from "node:path";
 const tokensPath = resolve("tokens/index.json");
 const iosOutputPath = resolve("build/ios/DesignTokens.swift");
 const androidOutputPath = resolve("build/android/tokens.xml");
+const platformArgIndex = process.argv.indexOf("--platform");
+const platform = platformArgIndex !== -1 ? process.argv[platformArgIndex + 1] : "all";
 
 const tokens = JSON.parse(readFileSync(tokensPath, "utf8"));
 
@@ -67,47 +69,51 @@ function escapeSwift(value) {
 
 const entries = flattenObject(tokens);
 
-const iosLines = [
-  "//",
-  "// DesignTokens.swift",
-  "//",
-  "",
-  "// Do not edit directly, this file was auto-generated.",
-  "",
-  "import Foundation",
-  "",
-  "public enum DesignTokens {"
-];
+if (platform === "all" || platform === "ios") {
+  const iosLines = [
+    "//",
+    "// DesignTokens.swift",
+    "//",
+    "",
+    "// Do not edit directly, this file was auto-generated.",
+    "",
+    "import Foundation",
+    "",
+    "public enum DesignTokens {"
+  ];
 
-for (const entry of entries) {
-  const key = toCamelCase(entry.path);
-  const value = escapeSwift(entry.value);
-  iosLines.push(`  public static let ${key} = "${value}"`);
+  for (const entry of entries) {
+    const key = toCamelCase(entry.path);
+    const value = escapeSwift(entry.value);
+    iosLines.push(`  public static let ${key} = "${value}"`);
+  }
+
+  iosLines.push("}");
+  iosLines.push("");
+
+  mkdirSync(resolve("build/ios"), { recursive: true });
+  writeFileSync(iosOutputPath, iosLines.join("\n"), "utf8");
 }
 
-iosLines.push("}");
-iosLines.push("");
+if (platform === "all" || platform === "android") {
+  const androidLines = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    "",
+    "<!--",
+    "  Do not edit directly, this file was auto-generated.",
+    "-->",
+    "<resources>"
+  ];
 
-mkdirSync(resolve("build/ios"), { recursive: true });
-writeFileSync(iosOutputPath, iosLines.join("\n"), "utf8");
+  for (const entry of entries) {
+    const key = toSnakeCase(entry.path);
+    const value = escapeXml(entry.value);
+    androidLines.push(`  <string name="${key}">${value}</string>`);
+  }
 
-const androidLines = [
-  '<?xml version="1.0" encoding="UTF-8"?>',
-  "",
-  "<!--",
-  "  Do not edit directly, this file was auto-generated.",
-  "-->",
-  "<resources>"
-];
+  androidLines.push("</resources>");
+  androidLines.push("");
 
-for (const entry of entries) {
-  const key = toSnakeCase(entry.path);
-  const value = escapeXml(entry.value);
-  androidLines.push(`  <string name="${key}">${value}</string>`);
+  mkdirSync(resolve("build/android"), { recursive: true });
+  writeFileSync(androidOutputPath, androidLines.join("\n"), "utf8");
 }
-
-androidLines.push("</resources>");
-androidLines.push("");
-
-mkdirSync(resolve("build/android"), { recursive: true });
-writeFileSync(androidOutputPath, androidLines.join("\n"), "utf8");
