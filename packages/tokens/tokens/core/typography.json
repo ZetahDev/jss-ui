@@ -1,0 +1,17 @@
+{
+  "font": {
+    "family": {
+      "sans": { "value": "'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" }
+    },
+    "size": {
+      "sm": { "value": "0.875rem" },
+      "md": { "value": "1rem" },
+      "lg": { "value": "1.125rem" }
+    },
+    "weight": {
+      "regular": { "value": "400" },
+      "medium": { "value": "500" },
+      "semibold": { "value": "600" }
+    }
+  }
+}

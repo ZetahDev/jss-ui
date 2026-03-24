@@ -1,0 +1,20 @@
+{
+  "component": {
+    "button": {
+      "background": {
+        "default": { "value": "{color.background.primary}" },
+        "hover": { "value": "{color.blue.600}" }
+      },
+      "text": {
+        "default": { "value": "{color.text.inverted}" }
+      },
+      "radius": {
+        "default": { "value": "0.5rem" }
+      },
+      "padding": {
+        "x": { "value": "{space.4}" },
+        "y": { "value": "{space.2}" }
+      }
+    }
+  }
+}

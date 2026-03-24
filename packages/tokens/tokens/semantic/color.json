@@ -1,0 +1,16 @@
+{
+  "color": {
+    "background": {
+      "primary": { "value": "{color.blue.500}" },
+      "surface": { "value": "{color.white.base}" }
+    },
+    "text": {
+      "primary": { "value": "{color.gray.900}" },
+      "inverted": { "value": "{color.white.base}" },
+      "danger": { "value": "{color.red.600}" }
+    },
+    "border": {
+      "muted": { "value": "{color.gray.100}" }
+    }
+  }
+}

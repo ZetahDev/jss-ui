@@ -1,0 +1,31 @@
+:root {
+  --jss-color-bg-primary: #2563eb;
+  --jss-color-bg-surface: #ffffff;
+  --jss-color-text-primary: #111827;
+  --jss-color-text-inverted: #ffffff;
+  --jss-color-border-muted: #f3f4f6;
+  --jss-color-danger: #dc2626;
+
+  --jss-space-0: 0rem;
+  --jss-space-1: 0.25rem;
+  --jss-space-2: 0.5rem;
+  --jss-space-3: 0.75rem;
+  --jss-space-4: 1rem;
+  --jss-space-5: 1.25rem;
+  --jss-space-6: 1.5rem;
+
+  --jss-font-family-sans: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --jss-font-size-sm: 0.875rem;
+  --jss-font-size-md: 1rem;
+  --jss-font-size-lg: 1.125rem;
+  --jss-font-weight-regular: 400;
+  --jss-font-weight-medium: 500;
+  --jss-font-weight-semibold: 600;
+
+  --jss-button-bg-default: var(--jss-color-bg-primary);
+  --jss-button-bg-hover: #1d4ed8;
+  --jss-button-text-default: var(--jss-color-text-inverted);
+  --jss-button-radius: 0.5rem;
+  --jss-button-padding-x: var(--jss-space-4);
+  --jss-button-padding-y: var(--jss-space-2);
+}
