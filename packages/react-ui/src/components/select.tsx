@@ -14,7 +14,7 @@ export const SelectTrigger = forwardRef<ElementRef<typeof SelectPrimitive.Trigge
     return (
       <SelectPrimitive.Trigger ref={ref} className={cn("jss-select__trigger", className)} {...props}>
         {children}
-        <SelectPrimitive.Icon className="jss-select__icon">▼</SelectPrimitive.Icon>
+        <SelectPrimitive.Icon className="jss-select__icon">v</SelectPrimitive.Icon>
       </SelectPrimitive.Trigger>
     );
   }
