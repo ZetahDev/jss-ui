@@ -1,0 +1,30 @@
+{
+  "source": ["tokens/core/**/*.json", "tokens/semantic/**/*.json", "tokens/components/**/*.json"],
+  "platforms": {
+    "webCss": {
+      "transformGroup": "css",
+      "prefix": "jss",
+      "buildPath": "./",
+      "files": [
+        {
+          "destination": "tokens.css",
+          "format": "css/variables",
+          "options": {
+            "outputReferences": true,
+            "selector": ":root"
+          }
+        }
+      ]
+    },
+    "webJson": {
+      "transformGroup": "js",
+      "buildPath": "tokens/",
+      "files": [
+        {
+          "destination": "index.json",
+          "format": "json/nested"
+        }
+      ]
+    }
+  }
+}

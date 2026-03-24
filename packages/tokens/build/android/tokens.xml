@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+-->
+<resources>
+  <string name="color_blue_500">#2563eb</string>
+  <string name="color_blue_600">#1d4ed8</string>
+  <string name="color_gray_50">#f9fafb</string>
+  <string name="color_gray_100">#f3f4f6</string>
+  <string name="color_gray_700">#374151</string>
+  <string name="color_gray_900">#111827</string>
+  <string name="color_red_600">#dc2626</string>
+  <string name="color_white_base">#ffffff</string>
+  <string name="color_background_primary">#2563eb</string>
+  <string name="color_background_surface">#ffffff</string>
+  <string name="color_text_primary">#111827</string>
+  <string name="color_text_inverted">#ffffff</string>
+  <string name="color_text_danger">#dc2626</string>
+  <string name="color_border_muted">#f3f4f6</string>
+  <string name="space_0">0rem</string>
+  <string name="space_1">0.25rem</string>
+  <string name="space_2">0.5rem</string>
+  <string name="space_3">0.75rem</string>
+  <string name="space_4">1rem</string>
+  <string name="space_5">1.25rem</string>
+  <string name="space_6">1.5rem</string>
+  <string name="font_family_sans">&apos;Segoe UI&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif</string>
+  <string name="font_size_sm">0.875rem</string>
+  <string name="font_size_md">1rem</string>
+  <string name="font_size_lg">1.125rem</string>
+  <string name="font_weight_regular">400</string>
+  <string name="font_weight_medium">500</string>
+  <string name="font_weight_semibold">600</string>
+  <string name="component_button_background_default">#2563eb</string>
+  <string name="component_button_background_hover">#1d4ed8</string>
+  <string name="component_button_text_default">#ffffff</string>
+  <string name="component_button_radius_default">0.5rem</string>
+  <string name="component_button_padding_x">1rem</string>
+  <string name="component_button_padding_y">0.5rem</string>
+</resources>
