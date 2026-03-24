@@ -2,15 +2,27 @@
   "color": {
     "background": {
       "primary": { "value": "{color.blue.500}" },
-      "surface": { "value": "{color.white.base}" }
+      "canvas": { "value": "{color.gray.50}" },
+      "surface": { "value": "{color.white.base}" },
+      "surfaceElevated": { "value": "{color.white.base}" },
+      "surfaceMuted": { "value": "{color.gray.100}" },
+      "overlay": { "value": "rgba(15, 23, 42, 0.56)" }
     },
     "text": {
       "primary": { "value": "{color.gray.900}" },
+      "secondary": { "value": "{color.gray.700}" },
+      "muted": { "value": "{color.gray.600}" },
       "inverted": { "value": "{color.white.base}" },
       "danger": { "value": "{color.red.600}" }
     },
     "border": {
-      "muted": { "value": "{color.gray.100}" }
+      "muted": { "value": "{color.gray.100}" },
+      "default": { "value": "{color.gray.200}" },
+      "strong": { "value": "{color.gray.300}" },
+      "focus": { "value": "{color.blue.500}" }
+    },
+    "ring": {
+      "focus": { "value": "{color.blue.400}" }
     }
   }
 }
