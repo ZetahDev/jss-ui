@@ -3,3 +3,81 @@
 .jss-ui-reset {
   box-sizing: border-box;
 }
+
+.jss-button {
+  align-items: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--jss-font-family-sans);
+  font-size: var(--jss-font-size-md);
+  font-weight: var(--jss-font-weight-medium);
+  gap: var(--jss-space-2);
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.08s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.jss-button:focus-visible {
+  outline: 2px solid var(--jss-color-bg-primary);
+  outline-offset: 2px;
+}
+
+.jss-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.jss-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.jss-button--solid {
+  background-color: var(--jss-button-bg-default);
+  color: var(--jss-button-text-default);
+}
+
+.jss-button--solid:hover:not(:disabled) {
+  background-color: var(--jss-button-bg-hover);
+}
+
+.jss-button--outline {
+  background-color: var(--jss-color-bg-surface);
+  border-color: var(--jss-color-border-muted);
+  color: var(--jss-color-text-primary);
+}
+
+.jss-button--outline:hover:not(:disabled) {
+  border-color: var(--jss-color-bg-primary);
+  color: var(--jss-color-bg-primary);
+}
+
+.jss-button--ghost {
+  background-color: transparent;
+  color: var(--jss-color-text-primary);
+}
+
+.jss-button--ghost:hover:not(:disabled) {
+  background-color: var(--jss-color-border-muted);
+}
+
+.jss-button--sm {
+  font-size: var(--jss-font-size-sm);
+  min-height: 2rem;
+  padding: var(--jss-space-1) var(--jss-space-3);
+}
+
+.jss-button--md {
+  font-size: var(--jss-font-size-md);
+  min-height: 2.5rem;
+  padding: var(--jss-space-2) var(--jss-space-4);
+}
+
+.jss-button--lg {
+  font-size: var(--jss-font-size-lg);
+  min-height: 3rem;
+  padding: var(--jss-space-3) var(--jss-space-5);
+}
