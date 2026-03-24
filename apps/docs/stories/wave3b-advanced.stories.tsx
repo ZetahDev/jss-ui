@@ -132,11 +132,11 @@ export const CarouselResizableAndSidebar: Story = {
             <div style={{ border: "1px solid #cbd5e1", borderRadius: "0.75rem", padding: "1rem" }}>Slide 3</div>
           </CarouselItem>
         </CarouselContent>
+        <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.75rem" }}>
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
       </Carousel>
-      <div style={{ display: "flex", gap: "0.5rem" }}>
-        <CarouselPrevious />
-        <CarouselNext />
-      </div>
 
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel defaultSize={40}>Left panel</ResizablePanel>
