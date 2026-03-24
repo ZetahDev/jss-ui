@@ -1,0 +1,33 @@
+{
+  "name": "@js-solutions/icons",
+  "version": "0.0.0",
+  "private": false,
+  "description": "React icon package for JS Solutions UI.",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "react": "^18.3.0 || ^19.0.0",
+    "react-dom": "^18.3.0 || ^19.0.0"
+  },
+  "scripts": {
+    "build": "tsup --config tsup.config.ts",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/icons')\"",
+    "test": "node -e \"console.log('test not configured yet for @js-solutions/icons')\""
+  }
+}
