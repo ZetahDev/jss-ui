@@ -270,6 +270,52 @@
   width: 100%;
 }
 
+.jss-slider {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  touch-action: none;
+  user-select: none;
+  width: 100%;
+}
+
+.jss-slider__track {
+  background-color: color-mix(in srgb, var(--jss-color-border-muted) 60%, white);
+  border-radius: 999px;
+  flex-grow: 1;
+  height: 0.375rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.jss-slider__range {
+  background-color: var(--jss-color-background-primary);
+  border-radius: inherit;
+  height: 100%;
+  position: absolute;
+}
+
+.jss-slider__thumb {
+  background-color: var(--jss-color-background-surface);
+  border: 2px solid var(--jss-color-background-primary);
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.24);
+  display: block;
+  height: 1rem;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  width: 1rem;
+}
+
+.jss-slider__thumb:hover {
+  transform: scale(1.05);
+}
+
+.jss-slider__thumb:focus-visible {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--jss-color-background-primary) 20%, transparent);
+  outline: none;
+}
+
 .jss-checkbox,
 .jss-radio {
   align-items: center;

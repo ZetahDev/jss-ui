@@ -182,6 +182,7 @@ export {
   SheetTrigger
 } from "./components/sheet";
 export { Skeleton, type SkeletonProps } from "./components/skeleton";
+export { Slider, type SliderProps } from "./components/slider";
 export { Spinner, type SpinnerProps } from "./components/spinner";
 export {
   Sidebar,
@@ -193,7 +194,7 @@ export {
   SidebarTrigger,
   type SidebarProps
 } from "./components/sidebar";
-export { Toaster, toast } from "./components/sonner";
+export { Toaster, Toaster as Toast, toast } from "./components/sonner";
 export { Switch, type SwitchProps } from "./components/switch";
 export { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "./components/table";
 export { Tabs, TabsContent, TabsList, TabsTrigger, type TabsContentProps, type TabsListProps, type TabsTriggerProps } from "./components/tabs";
