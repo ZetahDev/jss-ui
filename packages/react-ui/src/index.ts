@@ -194,7 +194,7 @@ export {
   SidebarTrigger,
   type SidebarProps
 } from "./components/sidebar";
-export { Toaster, Toaster as Toast, toast } from "./components/sonner";
+export { Toaster, Toaster as Sonner, Toaster as Toast, toast } from "./components/sonner";
 export { Switch, type SwitchProps } from "./components/switch";
 export { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "./components/table";
 export { Tabs, TabsContent, TabsList, TabsTrigger, type TabsContentProps, type TabsListProps, type TabsTriggerProps } from "./components/tabs";
