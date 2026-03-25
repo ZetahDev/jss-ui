@@ -1,6 +1,9 @@
 name: CI
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -21,13 +24,13 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -47,13 +50,13 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -73,13 +76,13 @@ jobs:
   typecheck:
     name: Typecheck
     runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -102,7 +105,7 @@ jobs:
   chromatic:
     name: Chromatic
     runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     env:
       CHROMATIC_BRANCH: ${{ github.event.pull_request.head.ref || github.ref_name }}
       CHROMATIC_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
@@ -112,7 +115,7 @@ jobs:
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
