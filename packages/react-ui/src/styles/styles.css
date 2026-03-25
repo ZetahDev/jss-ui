@@ -58,22 +58,27 @@
 
 .jss-button--solid {
   background-image: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--jss-component-button-background-default) 88%, white) 0%,
-    var(--jss-component-button-background-default) 100%
+    160deg,
+    color-mix(in srgb, var(--jss-component-button-background-default) 84%, white) 0%,
+    var(--jss-component-button-background-default) 58%,
+    color-mix(in srgb, var(--jss-component-button-background-default) 92%, black) 100%
   );
-  box-shadow: var(--jss-shadow-sm);
+  border-color: color-mix(in srgb, var(--jss-component-button-background-default) 82%, black);
+  box-shadow:
+    var(--jss-shadow-sm),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
   color: var(--jss-component-button-text-default);
 }
 
 .jss-button--solid:hover:not(:disabled) {
   background-image: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--jss-component-button-background-hover) 88%, white) 0%,
-    var(--jss-component-button-background-hover) 100%
+    160deg,
+    color-mix(in srgb, var(--jss-component-button-background-hover) 84%, white) 0%,
+    var(--jss-component-button-background-hover) 56%,
+    color-mix(in srgb, var(--jss-component-button-background-hover) 90%, black) 100%
   );
   box-shadow: var(--jss-shadow-md);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .jss-button--solid:active:not(:disabled) {
@@ -164,9 +169,10 @@
 
 .jss-card {
   background-image: linear-gradient(
-    180deg,
+    165deg,
     color-mix(in srgb, var(--jss-color-background-surface-elevated) 94%, white) 0%,
-    var(--jss-color-background-surface-elevated) 100%
+    var(--jss-color-background-surface-elevated) 70%,
+    color-mix(in srgb, var(--jss-color-background-surface-elevated) 96%, black) 100%
   );
   border: 1px solid var(--jss-color-border-default);
   border-radius: var(--jss-radius-lg);
@@ -179,7 +185,7 @@
 
 .jss-card:hover {
   box-shadow: var(--jss-shadow-md);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .jss-card__header,
