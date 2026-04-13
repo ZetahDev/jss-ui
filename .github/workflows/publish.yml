@@ -33,7 +33,7 @@ jobs:
           node-version: 22
           cache: pnpm
           registry-url: https://npm.pkg.github.com
-          scope: "@js-solutions"
+          scope: "@zetahdev"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -42,7 +42,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
         run: |
-          echo "@js-solutions:registry=https://npm.pkg.github.com" >> "$HOME/.npmrc"
+          echo "@zetahdev:registry=https://npm.pkg.github.com" >> "$HOME/.npmrc"
           echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> "$HOME/.npmrc"
 
       - name: Create version PR or publish

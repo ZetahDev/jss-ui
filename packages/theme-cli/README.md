@@ -1,12 +1,12 @@
-# @js-solutions/theme-cli
+# @zetahdev/theme-cli
 
 Wizard CLI to generate theme artifacts for Web, iOS, and Android from a single `theme.config.json`.
 
 ## Usage
 
 ```bash
-pnpm dlx @js-solutions/theme-cli init
-pnpm dlx @js-solutions/theme-cli generate --config theme.config.json
+pnpm dlx @zetahdev/theme-cli init
+pnpm dlx @zetahdev/theme-cli generate --config theme.config.json
 ```
 
 Or after installing in a consumer app:

@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-import { CheckIcon } from "@js-solutions/icons";
+import { CheckIcon } from "@zetahdev/icons";
 
 import { Button } from "./button";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "./command";

@@ -1,5 +1,5 @@
 {
-  "name": "@js-solutions/tokens",
+  "name": "@zetahdev/tokens",
   "version": "0.1.0",
   "private": false,
   "description": "Design tokens package for JS Solutions UI.",
@@ -42,8 +42,8 @@
     "build:platforms": "pnpm run build:ios && pnpm run build:android",
     "clean:tokens": "style-dictionary clean --config style-dictionary.config.json",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/tokens')\"",
-    "test": "node -e \"console.log('test not configured yet for @js-solutions/tokens')\""
+    "lint": "node -e \"console.log('lint not configured yet for @zetahdev/tokens')\"",
+    "test": "node -e \"console.log('test not configured yet for @zetahdev/tokens')\""
   },
   "devDependencies": {
     "style-dictionary": "^5.4.0"

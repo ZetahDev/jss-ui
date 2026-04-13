@@ -15,7 +15,7 @@ export {
 export { Alert, AlertDescription, AlertTitle, type AlertProps } from "./components/alert";
 export { AspectRatio, type AspectRatioProps } from "./components/aspect-ratio";
 export { Avatar, AvatarFallback, AvatarImage, type AvatarFallbackProps, type AvatarImageProps, type AvatarProps } from "./components/avatar";
-export { CheckIcon, CloseIcon } from "@js-solutions/icons";
+export { CheckIcon, CloseIcon } from "@zetahdev/icons";
 export { Badge, type BadgeProps } from "./components/badge";
 export { BaseSlot, type BaseSlotProps } from "./components/base-slot";
 export { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "./components/breadcrumb";

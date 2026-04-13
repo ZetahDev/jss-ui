@@ -69,7 +69,7 @@ import {
   ToggleGroup,
   ToggleGroupItem,
   toast
-} from "@js-solutions/react-ui";
+} from "@zetahdev/react-ui";
 
 const meta = {
   title: "Foundations/Wave 3A",

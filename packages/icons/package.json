@@ -1,5 +1,5 @@
 {
-  "name": "@js-solutions/icons",
+  "name": "@zetahdev/icons",
   "version": "0.0.0",
   "private": false,
   "description": "React icon package for JS Solutions UI.",
@@ -31,7 +31,7 @@
   "scripts": {
     "build": "tsup --config tsup.config.ts",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/icons')\"",
-    "test": "node -e \"console.log('test not configured yet for @js-solutions/icons')\""
+    "lint": "node -e \"console.log('lint not configured yet for @zetahdev/icons')\"",
+    "test": "node -e \"console.log('test not configured yet for @zetahdev/icons')\""
   }
 }

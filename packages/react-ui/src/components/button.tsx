@@ -1,4 +1,4 @@
-import { buttonTokens } from "@js-solutions/tokens";
+import { buttonTokens } from "@zetahdev/tokens";
 import { cva, type VariantProps } from "class-variance-authority";
 import { forwardRef, type ButtonHTMLAttributes, type CSSProperties } from "react";
 

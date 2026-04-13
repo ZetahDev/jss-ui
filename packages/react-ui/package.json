@@ -1,5 +1,5 @@
 {
-  "name": "@js-solutions/react-ui",
+  "name": "@zetahdev/react-ui",
   "version": "0.1.0",
   "private": false,
   "description": "React component library for JS Solutions UI.",
@@ -28,8 +28,8 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@js-solutions/icons": "workspace:*",
-    "@js-solutions/tokens": "workspace:*",
+    "@zetahdev/icons": "workspace:*",
+    "@zetahdev/tokens": "workspace:*",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-aspect-ratio": "^1.1.8",
@@ -77,7 +77,7 @@
   "scripts": {
     "build": "tsup --config tsup.config.ts && node ./scripts/postbuild.mjs",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/react-ui')\"",
+    "lint": "node -e \"console.log('lint not configured yet for @zetahdev/react-ui')\"",
     "test": "vitest run --config vitest.config.ts",
     "test:watch": "vitest --config vitest.config.ts"
   }

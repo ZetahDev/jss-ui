@@ -87,7 +87,7 @@ import {
   TableHead,
   TableHeader,
   TableRow
-} from "@js-solutions/react-ui";
+} from "@zetahdev/react-ui";
 
 const meta = {
   title: "Foundations/Wave 3D Systems",
@@ -244,12 +244,12 @@ export const StructuredNavigationAndData: Story = {
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell>@js-solutions/react-ui</TableCell>
+            <TableCell>@zetahdev/react-ui</TableCell>
             <TableCell>Ready</TableCell>
             <TableCell>Frontend Platform</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>@js-solutions/tokens</TableCell>
+            <TableCell>@zetahdev/tokens</TableCell>
             <TableCell>Ready</TableCell>
             <TableCell>Design Ops</TableCell>
           </TableRow>

@@ -1,4 +1,4 @@
-# @js-solutions/tokens
+# @zetahdev/tokens
 
 ## 0.1.0
 

@@ -41,7 +41,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger
-} from "@js-solutions/react-ui";
+} from "@zetahdev/react-ui";
 
 const meta = {
   title: "Foundations/Overlays and Disclosure",
