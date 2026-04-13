@@ -1,5 +1,5 @@
 {
-  "name": "@js-solutions/docs",
+  "name": "@zetahdev/docs",
   "private": true,
   "version": "0.0.1",
   "description": "Storybook docs app for JS Solutions UI.",
@@ -8,12 +8,12 @@
     "dev": "storybook dev --config-dir .storybook --port 6006",
     "storybook": "storybook dev --config-dir .storybook --port 6006",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/docs')\"",
-    "test": "node -e \"console.log('test not configured yet for @js-solutions/docs')\""
+    "lint": "node -e \"console.log('lint not configured yet for @zetahdev/docs')\"",
+    "test": "node -e \"console.log('test not configured yet for @zetahdev/docs')\""
   },
   "dependencies": {
-    "@js-solutions/react-ui": "workspace:*",
-    "@js-solutions/tokens": "workspace:*",
+    "@zetahdev/react-ui": "workspace:*",
+    "@zetahdev/tokens": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

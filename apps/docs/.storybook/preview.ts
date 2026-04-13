@@ -1,4 +1,4 @@
-import "@js-solutions/react-ui/styles.css";
+import "@zetahdev/react-ui/styles.css";
 import "./preview.css";
 
 import type { Preview } from "@storybook/react";

@@ -16,23 +16,23 @@ const config: StorybookConfig = {
     baseConfig.resolve.alias = [
       ...(Array.isArray(baseConfig.resolve.alias) ? baseConfig.resolve.alias : []),
       {
-        find: /^@js-solutions\/react-ui$/,
+        find: /^@zetahdev\/react-ui$/,
         replacement: resolve(__dirname, "../../../packages/react-ui/src/index.ts")
       },
       {
-        find: /^@js-solutions\/react-ui\/styles.css$/,
+        find: /^@zetahdev\/react-ui\/styles.css$/,
         replacement: resolve(__dirname, "../../../packages/react-ui/src/styles/styles.css")
       },
       {
-        find: /^@js-solutions\/tokens$/,
+        find: /^@zetahdev\/tokens$/,
         replacement: resolve(__dirname, "../../../packages/tokens/src/index.ts")
       },
       {
-        find: /^@js-solutions\/tokens\/css$/,
+        find: /^@zetahdev\/tokens\/css$/,
         replacement: resolve(__dirname, "../../../packages/tokens/tokens.css")
       },
       {
-        find: /^@js-solutions\/icons$/,
+        find: /^@zetahdev\/icons$/,
         replacement: resolve(__dirname, "../../../packages/icons/src/index.ts")
       }
     ];

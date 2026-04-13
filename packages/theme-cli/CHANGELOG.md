@@ -1,4 +1,4 @@
-# @js-solutions/theme-cli
+# @zetahdev/theme-cli
 
 ## 0.1.0
 

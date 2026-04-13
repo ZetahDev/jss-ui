@@ -19,7 +19,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
   toast
-} from "@js-solutions/react-ui";
+} from "@zetahdev/react-ui";
 
 const meta = {
   title: "Foundations/Navigation and Feedback",

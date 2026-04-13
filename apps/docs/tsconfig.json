@@ -3,11 +3,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@js-solutions/icons": ["../../packages/icons/src/index.ts"],
-      "@js-solutions/react-ui": ["../../packages/react-ui/src/index.ts"],
-      "@js-solutions/react-ui/styles.css": ["../../packages/react-ui/src/styles/styles.css"],
-      "@js-solutions/tokens": ["../../packages/tokens/src/index.ts"],
-      "@js-solutions/tokens/css": ["../../packages/tokens/tokens.css"]
+      "@zetahdev/icons": ["../../packages/icons/src/index.ts"],
+      "@zetahdev/react-ui": ["../../packages/react-ui/src/index.ts"],
+      "@zetahdev/react-ui/styles.css": ["../../packages/react-ui/src/styles/styles.css"],
+      "@zetahdev/tokens": ["../../packages/tokens/src/index.ts"],
+      "@zetahdev/tokens/css": ["../../packages/tokens/tokens.css"]
     },
     "types": ["node"]
   },

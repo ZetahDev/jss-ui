@@ -1,3 +1,3 @@
-import { cssVariables } from "@js-solutions/tokens";
+import { cssVariables } from "@zetahdev/tokens";
 
 export const themeContract = cssVariables;

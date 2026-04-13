@@ -4,7 +4,7 @@ export default defineConfig({
   clean: true,
   dts: true,
   entry: ["src/index.ts"],
-  external: ["react", "react-dom", "@js-solutions/icons", "@js-solutions/tokens"],
+  external: ["react", "react-dom", "@zetahdev/icons", "@zetahdev/tokens"],
   format: ["esm", "cjs"],
   outDir: "dist",
   sourcemap: true,

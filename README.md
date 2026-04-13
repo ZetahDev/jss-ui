@@ -15,7 +15,7 @@ Production-grade monorepo for a scalable design system built with `pnpm` workspa
 ## Workspace Layout
 
 - `apps/*`: internal apps such as documentation or Storybook hosts
-- `packages/*`: publishable libraries under the `@js-solutions/*` scope
+- `packages/*`: publishable libraries under the `@zetahdev/*` scope
 
 ## Root Commands
 

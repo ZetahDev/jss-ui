@@ -1,5 +1,5 @@
 {
-  "name": "@js-solutions/theme-cli",
+  "name": "@zetahdev/theme-cli",
   "version": "0.1.0",
   "private": false,
   "description": "CLI wizard to generate theme artifacts for web, iOS, and Android.",
@@ -29,7 +29,7 @@
   "scripts": {
     "build": "tsup --config tsup.config.ts",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "lint": "node -e \"console.log('lint not configured yet for @js-solutions/theme-cli')\"",
+    "lint": "node -e \"console.log('lint not configured yet for @zetahdev/theme-cli')\"",
     "test": "vitest run --config vitest.config.ts",
     "test:watch": "vitest --config vitest.config.ts"
   }

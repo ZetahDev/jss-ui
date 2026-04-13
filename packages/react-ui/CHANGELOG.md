@@ -1,4 +1,4 @@
-# @js-solutions/react-ui
+# @zetahdev/react-ui
 
 ## 0.1.0
 
@@ -24,4 +24,4 @@
   - upgraded `Sidebar` surface, spacing, focus, and collapsed transitions
 
 - Updated dependencies [bac467b]
-  - @js-solutions/tokens@0.1.0
+  - @zetahdev/tokens@0.1.0

@@ -47,10 +47,10 @@ importers:
 
   apps/docs:
     dependencies:
-      '@js-solutions/react-ui':
+      '@zetahdev/react-ui':
         specifier: workspace:*
         version: link:../../packages/react-ui
-      '@js-solutions/tokens':
+      '@zetahdev/tokens':
         specifier: workspace:*
         version: link:../../packages/tokens
       react:
@@ -90,10 +90,10 @@ importers:
 
   packages/react-ui:
     dependencies:
-      '@js-solutions/icons':
+      '@zetahdev/icons':
         specifier: workspace:*
         version: link:../icons
-      '@js-solutions/tokens':
+      '@zetahdev/tokens':
         specifier: workspace:*
         version: link:../tokens
       '@radix-ui/react-accordion':

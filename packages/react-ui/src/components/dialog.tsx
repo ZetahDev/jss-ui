@@ -1,5 +1,5 @@
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { CloseIcon } from "@js-solutions/icons";
+import { CloseIcon } from "@zetahdev/icons";
 import { forwardRef, type ComponentPropsWithoutRef, type ElementRef, type HTMLAttributes } from "react";
 
 import { cn } from "../utils";
