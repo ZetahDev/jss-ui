@@ -1,7 +1,7 @@
 {
   "name": "@js-solutions/docs",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Storybook docs app for JS Solutions UI.",
   "scripts": {
     "build": "storybook build --config-dir .storybook --output-dir storybook-static",

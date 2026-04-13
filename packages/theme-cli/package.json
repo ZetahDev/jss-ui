@@ -1,6 +1,6 @@
 {
   "name": "@js-solutions/theme-cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": false,
   "description": "CLI wizard to generate theme artifacts for web, iOS, and Android.",
   "license": "MIT",
