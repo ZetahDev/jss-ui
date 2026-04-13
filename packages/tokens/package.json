@@ -1,6 +1,6 @@
 {
   "name": "@zetahdev/tokens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Design tokens package for JS Solutions UI.",
   "license": "MIT",
@@ -8,8 +8,8 @@
     "access": "restricted",
     "registry": "https://npm.pkg.github.com"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "build",
@@ -24,8 +24,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     },
     "./css": "./tokens.css",
     "./tokens.json": "./tokens/index.json",
