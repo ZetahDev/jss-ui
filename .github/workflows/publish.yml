@@ -40,7 +40,7 @@ jobs:
 
       - name: Configure npm authentication
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "@zetahdev:registry=https://npm.pkg.github.com" >> "$HOME/.npmrc"
           echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> "$HOME/.npmrc"
@@ -56,4 +56,4 @@ jobs:
           createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
